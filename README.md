@@ -80,7 +80,7 @@ You should have completed the [prerequisite Vonage + Deepgram guide](https://dev
 2. Enable the **Voice** capability. Set the webhooks (you'll paste the real ngrok URL in Step 4):
    - **Answer URL** → `https://<ngrok>/answer`, method **GET**
    - **Event URL** → `https://<ngrok>/event`, method **POST**
-3. **Generate the public/private key**, download it, and save it as `vonage_private.key` in the project root (it's gitignored). The running server doesn't sign anything itself, but this is standard setup and Part 2 will use it.
+3. **Generate the public/private key** and download it. Vonage names the file `private.key`; save it in the project root under that name (it's gitignored). The server uses it to sign the request that transfers a caller to a human, so without it, transfers fail.
 4. **Buy a number** and **link it to this application**. This is the number you'll dial.
 
 ### Step 2: Configure `.env`

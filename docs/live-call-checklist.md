@@ -13,7 +13,7 @@ Run through these in order before you dial in.
 VONAGE_API_KEY=
 VONAGE_API_SECRET=
 VONAGE_APP_ID=
-VONAGE_PRIVATE_KEY_PATH=./vonage_private.key   # must match your actual key file
+VONAGE_PRIVATE_KEY_PATH=./private.key          # the name Vonage's dashboard gives the download
 DEEPGRAM_API_KEY=
 BASE_URL=https://your-ngrok-url.ngrok.io       # ← the one that bites everyone
 PORT=3000
